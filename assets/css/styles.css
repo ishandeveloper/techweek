@@ -30,6 +30,7 @@ body {
 
 .hero-section {
   display: block;
+  min-height: 100vh;
 }
 
 .left-hero {
@@ -170,9 +171,51 @@ body {
 }
 
 /* Styles for Schedule Section */
-
 .schedule-section {
   display: block;
+}
+
+.horizontal-scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 100px;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-scroll div { 
+  margin-right: 40px;
+  cursor: pointer;
+  display: inline-block;
+  height: 400px;
+  width: 55%;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+} 
+
+.schedule-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-top: 70px;
+}
+
+.schedule-title h1{
+  font-weight: bold;
+}
+
+/* For Mobile Screens */
+@media only screen and (max-width: 768px) {
+  .horizontal-scroll div{
+    width: 400px;
+    height: 300px;
+  }
+
 }
 
 /* Styles for Sponsors & Speakers Section */
