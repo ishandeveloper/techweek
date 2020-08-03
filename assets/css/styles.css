@@ -170,6 +170,11 @@ body {
   display: none;
 }
 
+.horizontal-scroll {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
 .horizontal-scroll div { 
   margin-right: 40px;
   cursor: pointer;
