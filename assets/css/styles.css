@@ -111,12 +111,20 @@ body {
 
 /* For Mobile Screens */
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
   .hero-title h1 {
     font-size: 3em;
     font-weight: 800;
   }
   .left-hero {
-    margin-left: 20px;
+
+    margin-left: 20px;    
+  }
+  .hero-section .row{
+    margin:0;
   }
   .learn-more-action {
     padding: 15px 25px;
@@ -130,12 +138,19 @@ body {
   .call-to-action:hover {
     padding: 15px 30px;
   }
+  .hero-actions {
+    display: flex;
+    justify-content: stretch;
+  }
 }
 /* For Mobile Screens */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 362px) {
   .hero-title h1 {
     font-size: 2.75em;
     font-weight: 800;
+  }
+  .hero-text p{
+      width: 90%;
   }
   .left-hero {
     margin-left: 15px;
