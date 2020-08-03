@@ -10,12 +10,148 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  color: var(--accent-color);
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.top-logo {
+  height: 100px;
+}
+
+.top-section {
+  width: auto;
+  padding: 10px 0px;
+  padding-bottom: 100px;
+}
 /* Styles for Hero Section */
 
 .hero-section {
   display: block;
+}
+
+.left-hero {
+  /* padding: 5% 100px; */
+  padding-left: 5%;
+  padding-top: 20px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero-title h1 {
+  font-size: 6em;
+  font-weight: 800;
+}
+.hero-title .year {
+  font-size: 1.65em;
+  font-weight: 600;
+}
+.hero-title .year:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transform: translateY(-45%) translateX(-85%);
+  background: var(--highlight-color);
+}
+.hero-text .date {
+  font-weight: 600;
+}
+.hero-text p {
+  margin-top: 25px;
+  text-align: justify;
+  font-size: 1.1em;
+  width: 80%;
+  font-weight: 500;
+}
+
+.call-to-action {
+  padding: 15px 40px;
+  color: white;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: all ease-in-out 0.25s;
+}
+.call-to-action:hover {
+  padding: 15px 45px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more-action {
+  padding: 15px 40px;
+  color: var(--accent-color);
+  background: white;
+  border: 2px solid var(--accent-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.25s;
+  border-radius: 50px;
+}
+
+.learn-more-action:hover {
+  padding: 15px 45px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-actions {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+/* For Mobile Screens */
+@media only screen and (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 3em;
+    font-weight: 800;
+  }
+  .left-hero {
+    margin-left: 20px;
+  }
+  .learn-more-action {
+    padding: 15px 25px;
+  }
+  .learn-more-action:hover {
+    padding: 15px 30px;
+  }
+  .call-to-action {
+    padding: 15px 25px;
+  }
+  .call-to-action:hover {
+    padding: 15px 30px;
+  }
+}
+/* For Mobile Screens */
+@media only screen and (max-width: 350px) {
+  .hero-title h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+  }
+  .left-hero {
+    margin-left: 15px;
+  }
+  .learn-more-action {
+    padding: 15px 15px;
+  }
+  .learn-more-action:hover {
+    padding: 15px 18px;
+  }
+  .call-to-action {
+    padding: 15px 15px;
+  }
+  .call-to-action:hover {
+    padding: 15px 18px;
+  }
 }
 
 /* Styles for Schedule Section */
