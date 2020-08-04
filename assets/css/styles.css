@@ -246,7 +246,7 @@ margin-top: 80px;
   scrollbar-width: none;
 }
 
-.horizontal-scroll div {
+.schedule-card {
   margin-right: 40px;
   cursor: pointer;
   display: inline-block;
@@ -254,7 +254,7 @@ margin-top: 80px;
   width: 55%;
   border-radius: 0.5em;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  overflow: auto;
 }
 
 .schedule-title {
@@ -267,13 +267,55 @@ margin-top: 80px;
 }
 
 .schedule-title h1 {
-  font-weight: bold;
+  font-weight: 400;
   color: var(--accent-color);
+}
+
+.schedule-left {
+  float: left;
+  width: 40%;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.schedule-left h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4em;
+  color: var(--accent-color);
+}
+
+.schedule-left p {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.schedule-right {
+  float: right;
+  width: 60%;
+  background-color: var(--accent-color);
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.schedule-right h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.schedule-right h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 /* For Mobile Screens */
 @media only screen and (max-width: 768px) {
-  .horizontal-scroll div {
+  .schedule-card {
     width: 400px;
     height: 300px;
   }
