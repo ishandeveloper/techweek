@@ -153,6 +153,12 @@ margin-top: 80px;
   .hero-actions{
     width: 150%;
   }
+    .hero-section{
+    min-height: auto;
+  }
+  .left-hero{
+    min-height: auto;
+  }
 }
 /* For Mobile Screens */
 @media only screen and (max-width: 768px) {
@@ -190,6 +196,7 @@ margin-top: 80px;
     display: flex;
     justify-content: stretch;
   }
+
 }
 /* For Mobile Screens */
 @media only screen and (max-width: 362px) {
@@ -215,6 +222,7 @@ margin-top: 80px;
   .call-to-action:hover {
     padding: 15px 18px;
   }
+  
 }
 
 /* Styles for Schedule Section */
