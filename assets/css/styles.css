@@ -2,7 +2,8 @@
 
 /* Color Codes & Other Variables */
 :root {
-  --accent-color: #3f3e60;
+  --accent-color: #2C51AD;
+  --text-color:#000000;
   --highlight-color: rgba(63, 62, 96, 0.12);
 }
 
@@ -10,7 +11,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
 body {
@@ -69,10 +70,13 @@ margin-top: 80px;
 .hero-title h1 {
   font-size: 6em;
   font-weight: 800;
+  color: var(--accent-color);
+
 }
 .hero-title .year {
   font-size: 1.65em;
   font-weight: 600;
+  color: var(--accent-color);
   z-index: 1;
 }
 .hero-title .year:after {
@@ -214,6 +218,7 @@ margin-top: 80px;
 }
 
 /* Styles for Schedule Section */
+
 .schedule-section {
   display: block;
 }
@@ -255,6 +260,7 @@ margin-top: 80px;
 
 .schedule-title h1 {
   font-weight: bold;
+  color: var(--accent-color);
 }
 
 /* For Mobile Screens */
