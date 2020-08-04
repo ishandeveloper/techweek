@@ -143,12 +143,21 @@ margin-top: 80px;
   .right-hero{
     display: none;
   }
+  .hero-text p{
+    width: 150%;
+  }
+  .hero-actions{
+    width: 150%;
+  }
 }
 /* For Mobile Screens */
 @media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
     max-width: 100vw;
+  }
+    .hero-text p{
+    width: 90%;
   }
   .hero-title h1 {
     font-size: 3em;
@@ -173,6 +182,7 @@ margin-top: 80px;
     padding: 15px 30px;
   }
   .hero-actions {
+    width: 100%;
     display: flex;
     justify-content: stretch;
   }
