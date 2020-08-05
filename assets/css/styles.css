@@ -273,6 +273,7 @@ body {
   height: 100%;
   padding-top: 40px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .schedule-left h1 {
@@ -299,6 +300,7 @@ body {
   padding-left: 20px;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;  
+  padding-right: 20px;
 }
 
 .schedule-right h1 {
