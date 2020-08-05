@@ -356,5 +356,33 @@ body {
 /* Styles for Footer Area */
 
 .footer-area {
-  display: block;
+  background: var(--highlight-color);
+  padding: 25px 0px;
+}
+
+.copyright{
+    font-size: 1.2em;
+  font-weight: 600;
+  color: #444444;
+}
+.handles{
+  font-family: 'Montserrat';
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: all ease-in 0.25s;
+}
+.handles:hover{
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .copyright{
+    font-size: 0.75em;
+  }
+  .madeby{
+    font-size: 0.75em;
+  }
+
 }
