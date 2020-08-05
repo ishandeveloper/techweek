@@ -31,14 +31,14 @@ body {
 
 .hero-section {
   display: block;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .left-hero {
   /* padding: 5% 100px; */
   padding-left: 5%;
   padding-top: 20px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .right-hero {
   display: flex;
@@ -299,7 +299,7 @@ body {
   padding-top: 40px;
   padding-left: 20px;
   border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;  
+  border-bottom-right-radius: 0.5rem;
   padding-right: 20px;
 }
 
@@ -307,7 +307,6 @@ body {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
-  
 }
 
 .schedule-right h2 {
@@ -329,7 +328,7 @@ body {
   margin-top: 150px;
 }
 
-.schedule-right h4 span{
+.schedule-right h4 span {
   float: right;
   padding-right: 20px;
   color: white;
@@ -337,7 +336,6 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
-
 
 /* For Mobile Screens */
 @media only screen and (max-width: 768px) {
@@ -353,6 +351,58 @@ body {
   display: block;
 }
 
+.speaker-square {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  background: var(--accent-color);
+  color: white;
+  position: relative;
+}
+.speaker-square .content{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.speaker-square .content .big{
+  font-size: 8em;
+  color: white;
+  font-weight: 700;
+}
+.speaker-square .content .small{
+  font-size: 1.55em;
+  color: white;
+  font-weight: 500;
+}
+
+.speaker-card{
+  width: 100%;
+  border:1px solid black;
+  position: relative;
+  background: var(--accent-color);
+}
+.speaker-card .speaker-img{
+  width: 100%;
+}
+.speaker-card .speaker-details{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--accent-color);
+padding: 15px 30px;
+}
+.speaker-card .speaker-details .speaker-name{
+  color:white;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+.speaker-card .speaker-details .speaker-designation{
+  color:white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
 /* Styles for Footer Area */
 
 .footer-area {
@@ -360,29 +410,27 @@ body {
   padding: 25px 0px;
 }
 
-.copyright{
-    font-size: 1.2em;
+.copyright {
+  font-size: 1.2em;
   font-weight: 600;
   color: #444444;
 }
-.handles{
-  font-family: 'Montserrat';
+.handles {
+  font-family: "Montserrat";
   color: var(--accent-color);
   font-weight: 500;
   transition: all ease-in 0.25s;
 }
-.handles:hover{
+.handles:hover {
   text-decoration: none;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-
-  .copyright{
+  .copyright {
     font-size: 0.75em;
   }
-  .madeby{
+  .madeby {
     font-size: 0.75em;
   }
-
 }
