@@ -281,13 +281,13 @@ body {
 .schedule-left h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 4em;
+  font-size: 4vw;
   color: var(--accent-color);
 }
 
 .schedule-left p {
   text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 1.4vw;
   color: var(--accent-color);
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -309,25 +309,29 @@ body {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2.5vw;
 }
 
 .schedule-right h2 {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2vw;
 }
 
 .schedule-right h5 {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1.5vw;
 }
 
-.schedule-right h4 {
+.schedule-right h4{
   color: white;
-  text-transform: uppercase;
   font-weight: 600;
-  margin-top: 150px;
+  font-size: 1.3vw;
+  margin-top: 160px;
+  text-transform: uppercase;
 }
 
 .schedule-right h4 span {
@@ -336,7 +340,6 @@ body {
   color: white;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -346,10 +349,24 @@ body {
 }
 
 /* For Mobile Screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .schedule-card {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 275px;
+  }
+
+  .schedule-left{
+    width: 35%;
+    padding-left: 10px;
+  }
+
+  .schedule-right {
+    width: 65%;
+    padding-left: 15px;
+  }
+
+  .schedule-left h1 {
+    font-size: 7.5vw;
   }
   .schedule-section {
     min-height: auto;
