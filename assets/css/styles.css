@@ -264,8 +264,9 @@ body {
 }
 
 .schedule-title h1 {
-  font-weight: 400;
+  font-weight: 700;
   color: var(--accent-color);
+  font-size: 3em;
 }
 
 .schedule-left {
@@ -338,15 +339,24 @@ body {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .schedule-section {
+    min-height: auto;
+  }
+}
+
 /* For Mobile Screens */
 @media only screen and (max-width: 768px) {
   .schedule-card {
     width: 400px;
     height: 300px;
   }
+  .schedule-section {
+    min-height: auto;
+  }
 }
 
-/* Styles for Sponsors & Speakers Section */
+/* Styles for Speakers Section */
 
 .sp-section {
   display: block;
@@ -567,4 +577,55 @@ body {
 .highlight-clean .buttons .btn-primary {
   background-color: var(--accent-color);
   color: #fff;
+}
+
+/* Styles for sponsors section */
+
+.sponsors-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-top: 70px;
+}
+
+.sponsors-title h1 {
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--accent-color);
+}
+
+.sponsors-section {
+  min-height: 50vh;
+}
+.sponsor-image {
+  width: 80%;
+  padding: 20px 0px;
+}
+#pb {
+  width: 70%;
+}
+.sponsors-section .sponsors-left
+{  padding-top: 75px;
+}
+
+.collab-image {
+  width: 50%;
+  height: auto;
+}
+#dsc {
+  height: 100%;
+}
+#acm {
+  width: 125px;
+  height: 125px;
+  margin: 25px 10px;
+}
+
+#chitkara {
+  width: 75%;
+}
+.sponsors-section .sponsors-right {
+padding-top:50px;
 }
