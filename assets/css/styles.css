@@ -325,14 +325,20 @@ body {
   font-size: 1.5vw;
 }
 
-.schedule-right h4 {
+.schedule-right h4{
+  color: white;
+  font-weight: 600;
+  font-size: 1.3vw;
+  margin-top: 160px;
+  text-transform: uppercase;
+}
+
+.schedule-right h4 span {
   float: right;
   padding-right: 20px;
   color: white;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 1.3vw;
-  margin-top: 140px;
 }
 
 /* For Mobile Screens */
@@ -348,6 +354,7 @@ body {
 
   .schedule-right {
     width: 65%;
+    padding-left: 15px;
   }
 
   .schedule-left h1 {
@@ -371,8 +378,12 @@ body {
   }
   
   .schedule-right h4 {
-    font-size: 5vw;
-    margin-top: 80px;
+    font-size: 4vw;
+    margin-top: 95px;
+  }
+
+  .schedule-right h4 span {
+    padding-right: 0px;
   }
 
 
