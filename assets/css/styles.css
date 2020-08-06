@@ -336,11 +336,46 @@ body {
 }
 
 /* For Mobile Screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .schedule-card {
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 275px;
   }
+
+  .schedule-left{
+    width: 35%;
+  }
+
+  .schedule-right {
+    width: 65%;
+  }
+
+  .schedule-left h1 {
+    font-size: 7.5vw;
+  }
+  
+  .schedule-left p {
+    font-size: 4.5vw;
+  }
+
+  .schedule-right h1 {
+    font-size: 6.5vw;
+  }
+  
+  .schedule-right h2 {
+    font-size: 6vw;
+  }
+  
+  .schedule-right h5 {
+    font-size: 5vw;
+  }
+  
+  .schedule-right h4 {
+    font-size: 5vw;
+    margin-top: 80px;
+  }
+
+
 }
 
 /* Styles for Sponsors & Speakers Section */
