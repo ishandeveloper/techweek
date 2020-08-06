@@ -25,3 +25,6 @@ slider.addEventListener("mousemove", (e) => {
   const walk = x - startX;
   slider.scrollLeft = scrollLeft - walk;
 });
+
+
+AOS.init();

@@ -31,13 +31,20 @@
     />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Animate on Scroll js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" data-aos="fade-down">
       <div class="row">
-        <div class="col-md-6 left-hero">
+        <div
+          class="col-md-6 left-hero"
+          data-aos="flip-left"
+          data-aos-delay="50"
+        >
           <div class="top-section">
             <img
               src="./assets/images/logo.png"
@@ -74,7 +81,11 @@
             </button>
           </div>
         </div>
-        <div class="col-md-6 right-hero">
+        <div
+          class="col-md-6 right-hero"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <div class="hero-image">
             <img
               class="hero-image-collage"
@@ -89,12 +100,12 @@
 
     <!-- Schedule Section -->
 
-    <section class="schedule-section" id="schedule">
+    <section class="schedule-section" id="schedule" data-aos="fade-up">
       <div class="schedule-title">
         <h1>Schedule</h1>
       </div>
       <div class="horizontal-scroll">
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 1</p>
             <h1>
@@ -110,7 +121,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 2</p>
             <h1>talk</h1>
@@ -126,7 +137,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 3</p>
             <h1>quiz</h1>
@@ -141,7 +152,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 4</p>
             <h1>
@@ -159,7 +170,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 4</p>
             <h1>
@@ -178,7 +189,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 5</p>
             <h1>
@@ -196,7 +207,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 6</p>
             <h1>
@@ -215,7 +226,7 @@
           </div>
         </div>
 
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
           <div class="schedule-left">
             <p>Day 6</p>
             <h1>
@@ -238,7 +249,7 @@
 
     <!-- Sponsors & Speakers Section -->
 
-    <section class="sp-section">
+    <section class="sp-section" data-aos="fade-up" data-aos-delay="100">
       <div class="row no-gutters">
         <div class="col-md-6">
           <div class="row no-gutters">
@@ -258,7 +269,12 @@
                   </div>
                 </div>
               </div>
-              <div class="speaker-card">
+              <div
+                class="speaker-card"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img
                   src="./assets/images/speakers/1.png"
                   alt=""
@@ -268,13 +284,21 @@
                   <div class="speaker-name">Vivek Bhardwaj</div>
                   <div class="speaker-designation">RPA Trainer</div>
                   <div class="speaker-description">
-                    Mr. Vivek Bhardwaj is a skilled master certified RPA professional having around 4+ years of teaching experience including 1+ year in Robotic Process Automation using tool Automation Anywhere.
+                    Mr. Vivek Bhardwaj is a skilled master certified RPA
+                    professional having around 4+ years of teaching experience
+                    including 1+ year in Robotic Process Automation using tool
+                    Automation Anywhere.
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="speaker-card">
+              <div
+                class="speaker-card"
+                data-aos="flip-right"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img
                   src="./assets/images/speakers/2.png"
                   alt=""
@@ -286,12 +310,19 @@
                     Google Developers Expert
                   </div>
                   <div class="speaker-description">
-                    He is a Google Developer Expert for Web & Firebase. Front End Developer & UI/UX Designer. He's also one of the core organizers at GDG (Google Developers Group) Jalandhar.
+                    He is a Google Developer Expert for Web & Firebase. Front
+                    End Developer & UI/UX Designer. He's also one of the core
+                    organizers at GDG (Google Developers Group) Jalandhar.
                   </div>
                 </div>
               </div>
 
-              <div class="speaker-card">
+              <div
+                class="speaker-card"
+                data-aos="flip-left"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <img
                   src="./assets/images/speakers/4.png"
                   alt=""
@@ -303,7 +334,10 @@
                     Ex-Microsoft, Ex-Flipkart
                   </div>
                   <div class="speaker-description">
-                   Mr. Gaurav Chandak, co-founder work@tech and an  allumni of NIT Durgapur  is a well profound Software Development Engineer who has previously worked with efficient companies like Flipkart and Microsoft.
+                    Mr. Gaurav Chandak, co-founder work@tech and an allumni of
+                    NIT Durgapur is a well profound Software Development
+                    Engineer who has previously worked with efficient companies
+                    like Flipkart and Microsoft.
                   </div>
                 </div>
               </div>
@@ -313,7 +347,11 @@
         <div class="col-md-6">
           <div class="row no-gutters">
             <div class="col-md-6">
-              <div class="speaker-card">
+              <div class="speaker-card"
+              data-aos="slide-down"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img
                   src="./assets/images/speakers/5.png"
                   alt=""
@@ -325,12 +363,18 @@
                     Senior Engineer @LinkedIn
                   </div>
                   <div class="speaker-description">
-                    Saurabh Badhwar is a  Senior Software Engineer in LinkedIn. He is basically an engineer working at the intersection of Infrastructure and Applications engineering.
+                    Saurabh Badhwar is a Senior Software Engineer in LinkedIn.
+                    He is basically an engineer working at the intersection of
+                    Infrastructure and Applications engineering.
                   </div>
                 </div>
               </div>
 
-              <div class="speaker-card">
+              <div class="speaker-card"
+              data-aos="slide-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img
                   src="./assets/images/speakers/3.png"
                   alt=""
@@ -342,15 +386,21 @@
                     Web & Flutter Developer
                   </div>
                   <div class="speaker-description">
-                    SDE Intern @PuStack, Web, Flutter, .Net Developer, part-time UI/UX Designer and a sophomore currently pursuing B.E. CSE from Chitkara University. 
-                    
-                    <br><br>Also, one of the guys who built this website :)
+                    SDE Intern @PuStack, Web, Flutter, .Net Developer, part-time
+                    UI/UX Designer and a sophomore currently pursuing B.E. CSE
+                    from Chitkara University.
+
+                    <br /><br />Also, one of the guys who built this website :)
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="speaker-card">
+              <div class="speaker-card"
+              data-aos="slide-down"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img
                   src="./assets/images/speakers/6.jpg"
                   alt=""
@@ -362,7 +412,9 @@
                     Team DSC
                   </div>
                   <div class="speaker-description">
-                   DSC Core Team Member, Flutter Developer, Novate 2020+ Winner, Student of Pre-Final Year in B.E. CSE at Chitkara University.
+                    DSC Core Team Member, Flutter Developer, Novate 2020+
+                    Winner, Student of Pre-Final Year in B.E. CSE at Chitkara
+                    University.
                   </div>
                 </div>
               </div>
@@ -492,6 +544,7 @@
     </section>
 
     <!-- The main javascript file for the webpage -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
