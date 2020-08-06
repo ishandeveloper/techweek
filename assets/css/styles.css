@@ -226,6 +226,7 @@ body {
 
 .schedule-section {
   display: block;
+  min-height: 90vh;
 }
 
 .horizontal-scroll {
@@ -349,6 +350,7 @@ body {
 
 .sp-section {
   display: block;
+  overflow: hidden;
 }
 
 .speaker-square {
@@ -358,49 +360,74 @@ body {
   color: white;
   position: relative;
 }
-.speaker-square .content{
+.speaker-square .content {
   position: absolute;
   top: 25px;
   left: 25px;
 }
 
-.speaker-square .content .big{
+.speaker-square .content .big {
   font-size: 8em;
   color: white;
   font-weight: 700;
 }
-.speaker-square .content .small{
+.speaker-square .content .small {
   font-size: 1.55em;
   color: white;
   font-weight: 500;
 }
 
-.speaker-card{
+.speaker-card {
   width: 100%;
-  border:1px solid black;
+
   position: relative;
   background: var(--accent-color);
 }
-.speaker-card .speaker-img{
+.speaker-card .speaker-img {
   width: 100%;
 }
-.speaker-card .speaker-details{
+.speaker-card .speaker-details {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
+  top: calc(100% - 80px);
   left: 0;
   right: 0;
   background: var(--accent-color);
-padding: 15px 30px;
+  padding: 15px 30px;
+  min-height: 100%;
+  transition: top 1s ease-in-out;
 }
-.speaker-card .speaker-details .speaker-name{
-  color:white;
+.speaker-card .speaker-details .speaker-name {
+  color: white;
   font-weight: 600;
   font-size: 1.25em;
 }
-.speaker-card .speaker-details .speaker-designation{
-  color:white;
+.speaker-card .speaker-details .speaker-designation {
+  color: white;
   font-weight: 400;
   font-size: 1em;
+}
+
+.speaker-card .speaker-details .speaker-description {
+  color: white;
+  margin-top: 10px;
+  /* width: 0; */
+  /* height: 0; */
+  /* display: none; */
+}
+
+.speaker-card:hover > .speaker-details {
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+}
+
+.speaker-card:hover > .speaker-details > .speaker-description {
+  display: block;
+
+  width: auto;
+  height: auto;
 }
 
 /* Styles for Footer Area */
