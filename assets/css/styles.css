@@ -672,3 +672,27 @@ body {
 .sponsors-section .sponsors-right {
 padding-top:50px;
 }
+
+@media only screen and (max-width: 768px) {
+.sponsors-right{
+  margin-top: 0;
+  display:flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.collab-logos{
+  display:flex;
+  flex-direction: column;
+align-items: center;
+
+}
+#dsc{
+  width:90%;
+  height: auto;
+}
+#acm{
+width: 150px;
+height: 150px;
+}
+}
