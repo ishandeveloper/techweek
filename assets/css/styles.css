@@ -328,13 +328,6 @@ a{
   font-size: 2vw;
 }
 
-.schedule-right h5 {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.5vw;
-}
-
 .schedule-right h4{
   color: white;
   font-weight: 600;
@@ -349,6 +342,25 @@ a{
   color: white;
   text-transform: capitalize;
   font-weight: 400;
+}
+
+.schedule-button {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1vw;
+  background: none;
+  border: none;
+  padding-top: 10px;
+}
+
+.schedule-button:active, .schedule-button:focus {
+  outline: none;
+}
+
+.fa-question-circle-o {
+  color: white;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -390,8 +402,9 @@ a{
     font-size: 5.5vw;
   }
   
-  .schedule-right h5 {
-    font-size: 5vw;
+  .schedule-button {
+    padding-top: 5px;
+    font-size: 4vw;
   }
   
   .schedule-right h4 {
