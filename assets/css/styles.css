@@ -351,6 +351,25 @@ a{
   font-weight: 400;
 }
 
+.schedule-button {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1vw;
+  background: none;
+  border: none;
+  padding-top: 10px;
+}
+
+.schedule-button:active, .schedule-button:focus {
+  outline: none;
+}
+
+.fa-question-circle-o {
+  color: white;
+  padding: 3px;
+}
+
 @media only screen and (max-width: 1024px) {
   .schedule-section {
     min-height: auto;
