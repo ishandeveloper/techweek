@@ -76,7 +76,7 @@
               </button>
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="call-to-action">
+            <button class="call-to-action" onclick="Swal.fire('Registrations', 'will be starting soon','info');">
               register now
             </button>
           </div>
@@ -492,12 +492,10 @@
             </p>
           </div>
           <div class="buttons">
-            <a
+            <button
               class="btn btn-primary"
-              role="button"
-              href="#"
-              style="pointer-events: none;"
-              >Register Now</a
+              role="button" onclick="Swal.fire('Registrations', 'will be starting soon','info');"
+              >Register Now</button
             >
           </div>
         </div>
@@ -544,6 +542,7 @@
     </section>
 
     <!-- The main javascript file for the webpage -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./main.js"></script>
   </body>
