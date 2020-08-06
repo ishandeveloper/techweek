@@ -350,7 +350,7 @@ body {
 
 /* For Mobile Screens */
 @media only screen and (max-width: 767px) {
-  .schedule-card {
+ .schedule-card {
     width: 500px;
     height: 275px;
   }
@@ -368,6 +368,32 @@ body {
   .schedule-left h1 {
     font-size: 7.5vw;
   }
+  
+  .schedule-left p {
+    font-size: 4.5vw;
+  }
+
+  .schedule-right h1 {
+    font-size: 6.5vw;
+  }
+  
+  .schedule-right h2 {
+    font-size: 5.5vw;
+  }
+  
+  .schedule-right h5 {
+    font-size: 5vw;
+  }
+  
+  .schedule-right h4 {
+    font-size: 4vw;
+    margin-top: 95px;
+  }
+
+  .schedule-right h4 span {
+    padding-right: 0px;
+  }
+
   .schedule-section {
     min-height: auto;
   }
