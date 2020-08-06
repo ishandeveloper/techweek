@@ -344,12 +344,13 @@ body {
 /* For Mobile Screens */
 @media only screen and (max-width: 767px) {
   .schedule-card {
-    width: 450px;
+    width: 500px;
     height: 275px;
   }
 
   .schedule-left{
     width: 35%;
+    padding-left: 10px;
   }
 
   .schedule-right {
@@ -370,7 +371,7 @@ body {
   }
   
   .schedule-right h2 {
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
   
   .schedule-right h5 {
