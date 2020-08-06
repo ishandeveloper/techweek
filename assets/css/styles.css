@@ -367,7 +367,7 @@ body {
 }
 
 .speaker-square .content .big {
-  font-size: 8em;
+  font-size: 6.5em;
   color: white;
   font-weight: 700;
 }
@@ -388,7 +388,6 @@ body {
 }
 .speaker-card .speaker-details {
   position: absolute;
-  /* bottom: 0; */
   top: calc(100% - 80px);
   left: 0;
   right: 0;
@@ -411,9 +410,7 @@ body {
 .speaker-card .speaker-details .speaker-description {
   color: white;
   margin-top: 10px;
-  /* width: 0; */
-  /* height: 0; */
-  /* display: none; */
+
 }
 
 .speaker-card:hover > .speaker-details {
@@ -430,6 +427,59 @@ body {
   height: auto;
 }
 
+#spea-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+.speaker-square .content .big{
+  font-size: 5em;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+.speaker-square .content .small{
+  display:none;
+}
+#kers{
+  display:none;
+}
+#spea-desktop{
+  display:none;
+}
+#spea-mobile{
+  display:block;
+}
+.speaker-square .content .big{
+  font-size: 4em;
+}
+#spea-mobile .content .small{
+  display: block;
+  letter-spacing: 1.5px;
+}
+.speaker-card .speaker-details .speaker-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.speaker-card .speaker-details .speaker-designation {
+  color: white;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.speaker-card .speaker-details .speaker-description {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.15em;
+}
+
+.speaker-card .speaker-details {
+  top: calc(100% - 90px); 
+}
+
+}
 /* Styles for Footer Area */
 
 .footer-area {
@@ -460,4 +510,64 @@ body {
   .madeby {
     font-size: 0.75em;
   }
+}
+
+/* Styles For Highlight Section */
+
+.highlight-clean {
+  color: var(--text-color);
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.highlight-clean p {
+  color: var(--text-color);
+}
+
+.highlight-clean h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.highlight-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.highlight-clean .buttons {
+  text-align: center;
+}
+
+.highlight-clean .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none;
+}
+
+.highlight-clean .buttons .btn:hover {
+  opacity: 1;
+}
+
+.highlight-clean .buttons .btn:active {
+  transform: translateY(1px);
+}
+
+.highlight-clean .buttons .btn-primary {
+  background-color: var(--accent-color);
+  color: #fff;
 }
