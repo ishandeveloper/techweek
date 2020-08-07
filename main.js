@@ -29,6 +29,6 @@ slider.addEventListener("mousemove", (e) => {
 AOS.init();
 
 function register() {
-  Swal.fire("Registrations", "Fill out the form in the new window", "info");
+  // Swal.fire("Registrations", "Fill out the form in the new window", "info");
   window.open("https://tinyurl.com/2020techweek", "_blank");
 }
