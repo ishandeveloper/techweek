@@ -629,6 +629,7 @@ a{
   letter-spacing: 0.4px;
   line-height: 1;
   outline: none;
+  background-color: #ddd;
 }
 
 .highlight-clean .buttons .btn:hover {
@@ -637,6 +638,8 @@ a{
 
 .highlight-clean .buttons .btn:active {
   transform: translateY(1px);
+  outline: none;
+  border: none;
 }
 
 .highlight-clean .buttons .btn-primary {
