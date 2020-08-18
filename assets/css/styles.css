@@ -238,6 +238,12 @@ a{
   min-height: 90vh;
 }
 
+.theme-topics{
+  font-size:0.8em;
+  font-weight:600;
+  color:var(--accent-color);
+}
+
 .horizontal-scroll {
   overflow-x: scroll;
   white-space: nowrap;
